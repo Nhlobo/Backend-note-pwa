@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # PostgreSQL connection
-DATABASE_URL = os.environ.get("DATABASE_URL", "postgres://username:password@host:port/dbname")
+DATABASE_URL = os.environ.get("DATABASE_URL", "postgresql://notes_db_ss3y_user:YGbu4SINPhB8P8tanpgT0GCmDnNQUfD9@dpg-d37hvd6mcj7s73flrsog-a/notes_db_ss3y")
 app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URL
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
